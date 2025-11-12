@@ -1,0 +1,8 @@
+{
+  "libraryStrings":{
+    "title":"Game sounds",
+    "selectAudio":"Select predefined audio",
+    "a11y.pause": "Pause audio",
+    "a11y.play": "Play audio"
+  }
+}

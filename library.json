@@ -1,0 +1,32 @@
+{
+  "title": "Game Sounds (AV widget extension)",
+  "description": "AV widget extension to select predefined audio samples",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "NDLA, Oliver Tacke",
+  "license": "MIT",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 27
+  },
+  "machineName": "H5PEditor.GameSounds",
+  "preloadedJs": [
+    {
+      "path": "dist/h5p-editor-game-sounds.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/h5p-editor-game-sounds.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    }
+  ]
+}

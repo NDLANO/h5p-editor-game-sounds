@@ -1,0 +1,24 @@
+.h5peditor-game-sounds {
+  --icon-font-awesome-angle-down: "\f107";
+  --icon-font-awesome-play: "\f04b";
+  --icon-font-awesome-stop: "\f04d";
+
+  --icon-select-angle: var(--icon-font-awesome-angle-down);
+  --icon-play: var(--icon-font-awesome-play);
+  --icon-stop: var(--icon-font-awesome-stop);
+
+  --color-h5p-editor-blue: hsl(209, 69%, 46%);
+  --color-h5p-editor-blue-dark: hsl(208, 69%, 39%);
+  --color-h5p-editor-border: hsl(240, 1%, 82%);
+  --color-h5p-editor-select-text: hsl(274, 9%, 29%);
+  --color-h5p-editor-white: hsl(0, 0%, 100%);
+
+  .h5peditor-game-sounds-flex {
+    --flex-size: 2.75rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    height: var(--flex-size);
+  }
+}

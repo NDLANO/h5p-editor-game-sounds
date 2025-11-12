@@ -1,0 +1,35 @@
+  .h5peditor-game-sounds-audio-button {
+    background-color: var(--color-h5p-editor-blue);
+    border: none;
+    border-radius: 0.25rem;
+    color: var(--color-h5p-editor-white);
+    cursor: pointer;
+    height: var(--flex-size);
+    outline-color: revert;
+    outline-style: revert;
+    outline-width: revert;
+    position: relative;
+    width: var(--flex-size);
+
+    &::before {
+      font-family: "H5PFontAwesome4", sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &.playing::before {
+      content: var(--icon-stop);
+    }
+
+    &:not(.playing)::before {
+      content: var(--icon-play);
+    }
+
+    &:hover {
+      background-color: var(--color-h5p-editor-blue-dark);
+    }
+  }
