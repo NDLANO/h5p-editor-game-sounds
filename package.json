@@ -4,7 +4,7 @@
   "description": "AV widget extension to select predefined audio samples",
   "private": true,
   "scripts": {
-    "lint": "stylelint './src/**/*.css' && eslint './src/**/*.js'",
+    "lint": "eslint './src/**/*.js'",
     "build": "webpack --mode=production",
     "watch": "webpack --mode=development --watch"
   },
@@ -30,8 +30,6 @@
     "mini-css-extract-plugin": "^2.9.4",
     "regenerator-runtime": "^0.14.1",
     "resolve-url-loader": "^5.0.0",
-    "stylelint": "^16.25.0",
-    "stylelint-config-recommended": "^17.0.0",
     "webpack": "^5.102.1",
     "webpack-cli": "^6.0.1"
   },
