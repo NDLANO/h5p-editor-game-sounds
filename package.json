@@ -1,6 +1,5 @@
 {
   "name": "h5p-editor-game-sounds",
-  "version": "1.0.0",
   "description": "AV widget extension to select predefined audio samples",
   "private": true,
   "scripts": {
