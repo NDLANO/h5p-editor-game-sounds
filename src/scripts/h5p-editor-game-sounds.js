@@ -277,6 +277,12 @@ export default class GameSounds extends H5P.EventDispatcher {
    * @returns {object} Media object with data (Blob) and filename with proper extension.
    */
   getMedia() {
+    /*
+     * H5PEditor.AV only calls this when the user inserts the medium. It resets all tabs when closing the dialog
+     * and does not tell the tabs about the current file when the dialog is reopened, so remember the selection.
+     */
+    this.insertedId = this.mediaSelect.getValue();
+
     return this.medium;
   }
 
@@ -295,6 +301,9 @@ export default class GameSounds extends H5P.EventDispatcher {
     delete this.medium;
     this.trigger('hasMedia', false);
 
-    this.mediaSelect.reset();
+    // Show last inserted sound when dialog is reopened instead of the first one
+    if (!this.mediaSelect.setValue(this.insertedId)) {
+      this.mediaSelect.reset();
+    }
   }
 }

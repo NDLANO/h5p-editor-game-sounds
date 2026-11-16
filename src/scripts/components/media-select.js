@@ -65,6 +65,23 @@ export default class Select {
   }
 
   /**
+   * Set the selected value.
+   * @param {string} value Value to select.
+   * @returns {boolean} True if value could be selected, else false.
+   */
+  setValue(value) {
+    const hasOption = [...this.select.options].some((option) => option.value === value);
+    if (!hasOption) {
+      return false;
+    }
+
+    this.select.value = value;
+    this.select.dispatchEvent(new Event('change'));
+
+    return true;
+  }
+
+  /**
    * Reset the select to its initial state.
    */
   reset() {
